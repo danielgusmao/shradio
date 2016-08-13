@@ -1,2 +1,2 @@
 # shradio
-Script para ouvir músicas de rádios online
+Script para ouvir músicas em rádios online.
