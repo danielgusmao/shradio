@@ -9,7 +9,10 @@
 
 # Verifica se 'mplayer' está instalando
 if [ ! -x "$(which mplayer)" ]; then
-	echo "$(basename "$0"): Erro: 'mplayer' não está instalado."; exit 1; fi
+	echo "$(basename "$0"): Erro: 'mplayer' não está instalado."; exit 1
+elif [ ! -x "$(which yad)" ]; then
+    echo "$(basename "$0"): Erro: 'yad' não está instalado."; exit 1
+fi
 
 # CONF
 TMP_LISTEN=$(mktemp --tmpdir=/tmp shradio.XXXXXXXXXX)
